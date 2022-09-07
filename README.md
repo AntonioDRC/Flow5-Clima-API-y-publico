@@ -84,8 +84,15 @@ Para ejecutar este flow, es necesario lo siguiente:
 5.- Para que multiples graficas sean mostradas en la sección de Histórico Público, es necesario que multiples usuarios se encuentren publicando a la vez.
 
 # Resultados
+![WhatsApp Image 2022-09-07 at 9 18 11 AM(1)](https://user-images.githubusercontent.com/111295166/188901695-cdcf8d78-b630-44fe-a460-d9fb78fb0454.jpeg)
+sultados
+![WhatsApp Image 2022-09-07 at 9 14 26 AM](https://user-images.githubusercontent.com/111295166/188901074-8ddb7f8c-ca92-4f90-8a15-c353362cce2c.jpeg)
 
-# Evidencias
+
+# Evidenca
+![WhatsApp Image 2022-09-07 at 9 14 28 AM](https://user-images.githubusercontent.com/111295166/188901048-b7d0f706-516c-4b3a-ae7d-9c3ee609ab94.jpeg)
+ias![WhatsApp Image 2022-09-07 at 9 14 27 AM](https://user-images.githubusercontent.com/111295166/188901065-1974d051-63e5-45ea-b86b-386faf20dd31.jpeg)
+
 
 # Creditos
 1.- CodigoIoT

@@ -16,4 +16,77 @@ En este flow se podra observar en una grafica de forma global los datos de tempe
 1.- Instalación de Virutal Box y Ubuntu 20.04
 2.- Instalación de NodeRed
 3.- Introducción a NodeRed
-4.- ntroducción a Mosquitto
+4.- Introducción a Mosquitto
+
+# Material de referencia
+En los siguientes enlaces puedes encontrar cursos en la plataforma de edu.codigoiot.com que te permitirán realiar las configuraciones necesarias
+
+1.- Instalación de Virutal Box y Ubuntu 20.04
+2.- Instalación de NodeRed
+3.- Introducción a NodeRed
+4.- Introducción a Mosquitto
+
+# Servicios
+Para que este ejercicio funcione, necesitas los siguientes servicios
+
+1.- HiveMQ. Es un broker publico y no se necesita cuenta
+    OpenWeatherMap. Servicio meteorológico gratuito. Se requiere cuenta,
+    pero no se requiere ningun pago.
+    
+# Instrucciones
+Para que este flow funcione, debes cumplir con los siguientes requisitos previos
+
+1.- Instalación de NodeJS. Se recomienda tener instalado NodeJS en alguna
+    versión LTS. Al momento de creación de este documento, se usó la
+    versión 16.17.0LTS. Esta instalación debe incluir las Build-Tools para
+    hacer uso de NPM
+    
+2.- Instalación de NodeRed. La instalación se realiza por NPM. Al momento
+    de la creación de este contenido, se usó la versión 3.0.2
+    
+3.- Instalar los nodos node-red-dashboard. Para ello, dirigete a la opcion
+    "Manage Palet" de NodeRed y en la pestaña Install busca node-red
+    dashboard. Finalmente haz clic en instalar.
+   
+4.- Instalación de Broker local Mosquitto MQTT.
+    
+5.- Cuenta en OpenWeatherMap.org. Este es el servidor del cual se
+    obtendrán los datos del clima por API
+    
+6.- API Key valida. Deberás generar una API Key con tu cuenta de
+    openweathermaps.org
+
+# Instrucciones de preparación del entorno
+
+Para ejecutar este flow, es necesario lo siguiente:
+
+    1.- Arrancar NodeRed con el comando node-red
+    2.- Importar el flow del repositorio.
+    3.- Coloca tu API Key personal en la API Call del nodo HTTP Request.
+    4.- Actualiza la IP del broker público.
+    5.- Hacer clic en el boton Deploy.
+
+# Instrucciones de operación
+
+1.- Para observar el resutlado de este flow, abre un navegador y dirígete  a localhost:1880/ui.
+2.- Para activar las gráficas de clima manual, debes enviar por MQTT un mensaje que contenga un JSON con las variables ID, temp y hum.
+
+# Notas
+
+1.- La sección manual de este flow se suscribe al tema codigoIoT/fow5/mqtt en un broker local.
+
+2.- El mensaje mqtt usado para probar este flow es mosquitto_pub -h localhost -t ccodigoIoT/fow5/mqtt -m '{"ID":"Hugo Vargas","temp":18,"hum":78}'
+    
+3.- Para que la gráfica historica muestre información, deben enviarse al menos 2 puntos.
+    
+4.- Para actualizar la IP del broker publico, se recomienda el siguiente comando nslookup broker.hivemq.com. Puedes usar el broker publico de tu elección.
+
+5.- Para que multiples graficas sean mostradas en la sección de Histórico Público, es necesario que multiples usuarios se encuentren publicando a la vez.
+
+# Resultados
+
+# Evidencias
+
+# Creditos
+1.- CodigoIoT
+2.- Profesor Hugo Escalpedo
